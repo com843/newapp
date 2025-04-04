@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #39FF14;
+            margin: 0;
+            padding-bottom: 60px; /* Prevent content from being hidden under navbar */
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #5e08af;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #fff;
+            background-color: #259c10;
+            padding: 10px;
+            margin: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensures it stays on top */
+            border-radius: 10px 10px 0 0;
+        }
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+            max-height: 300px; /* Fixed height */
+            overflow-y: auto; /* Enable scrolling */
+        }
+        .game-btn {
+            background: #fff;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .game-btn:hover {
+            background: #f0f0f0;
+        }
+        .game-btn img {
+            width: 60px;
+            height: 60px;
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #cc0cbf;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .nav-item {
+            color: #f0f0f0;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+        .nav-item i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 GAMES</h1>
+        <div class="game-grid">
+            <div class="game-btn" onclick="openGamePage('./file9832764.html')">
+                <img src="./file7000756.png" alt="Game 1">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file7123948.html')">
+                <img src="./file7680466.png" alt="Game 2">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file1608273.html')">
+                <img src="./file7490436.png" alt="Game 3">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file4530987.html')">
+                <img src="./file74948036.png" alt="Game 4">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file6273491.html')">
+                <img src="./file74943686.png" alt="Game 5">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file7283940.html')">
+                <img src="./file7283940.png" alt="Game 6">
+            </div>
+        </div>
+        <div class="game-grid">
+            <div class="game-btn" onclick="openGamePage('./file2039481.html')">
+                <img src="./file7683940.png" alt="Game 1">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file8902371.html')">
+                <img src="./file6783940.png" alt="Game 2">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file5098237.html')">
+                <img src="./file6784940.png" alt="Game 3">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file1849203.html')">
+                <img src="./file6789940.png" alt="Game 4">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file5748392.html')">
+                <img src="./file6909940.png" alt="Game 5">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file9182736.html')">
+                <img src="./file6903540.png" alt="Game 6">
+            </div>
+        </div>
+        <div class="game-grid">
+            <div class="game-btn" onclick="openGamePage('./file2374890.html')">
+                <img src="./file343540.png" alt="Game 1">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file6401827.html')">
+                <img src="./file357540.png" alt="Game 2">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file7839201.html')">
+                <img src="./file358940.png" alt="Game 3">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file1827364.html')">
+                <img src="./file358956.png" alt="Game 4">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file9283745.html')">
+                <img src="./file324356.png" alt="Game 5">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file8102736.html')">
+                <img src="./file5480356.png" alt="Game 6">
+            </div>
+        </div>
+        <div class="game-grid">
+            <div class="game-btn" onclick="openGamePage('./file3748192.html')">
+                <img src="./file586356.png" alt="Game 1">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file6728391.html')">
+                <img src="./file7880356.png" alt="Game 2">
+            </div>
+            <div class="game-btn" onclick="openGamePage('./file3419872.html')">
+                <img src="./file7827356.png" alt="Game 3">
+            </div></div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('#')">
+                    <img src="./1.gif" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('./file9832764.html')">
+                    <img src="./file7000756.png" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file7123948.html')">
+                    <img src="./file7680466.png" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file1608273.html')">
+                    <img src="./file7490436.png" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file4530987.html')">
+                    <img src="./file74948036.png" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./doodle-road.html')">
+                    <img src="./file74943686.png" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file7283940.html')">
+                    <img src="./file7283940.png" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('./file2039481.html')">
+                    <img src="./file7683940.png" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file8902371.html')">
+                    <img src="./file6783940.png" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file5098237.html')">
+                    <img src="./file6784940.png" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file1849203.html')">
+                    <img src="./file6789940.png" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file5748392.html')">
+                    <img src="./file6909940.png" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file9182736.html')">
+                    <img src="./file6903540.png" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('./file2374890.html')">
+                    <img src="./file343540.png" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file6401827.html')">
+                    <img src="./file357540.png" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file7839201.html')">
+                    <img src="./file358940.png" alt="Game 3">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file1827364.html')">
+                    <img src="./file358956.png" alt="Game 4">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file9283745.html')">
+                    <img src="./file324356.png" alt="Game 5">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file8102736.html')">
+                    <img src="./file5480356.png" alt="Game 6">
+                </div>
+            </div>
+            <div class="game-grid">
+                <div class="game-btn" onclick="openGamePage('./file3748192.html')">
+                    <img src="./file586356.png" alt="Game 1">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file6728391.html')">
+                    <img src="./file7880356.png" alt="Game 2">
+                </div>
+                <div class="game-btn" onclick="openGamePage('./file3419872.html')">
+                    <img src="./file7827356.png" alt="Game 3">
+                </div></div>
+
+    </div>
+    <nav class="bottom-nav">
+        <a href="./file1082735.html" class="nav-item">
+            <i class="fas fa-gamepad"></i>
+            <span>GAMES</span>
+        </a>
+        <a href="./file3928176.html" class="nav-item">
+            <i class="fas fa-robot"></i>
+            <span>CHATBOT</span>
+        </a>
+        <a href="./file3192837.html" class="nav-item">
+            <i class="fas fa-newspaper"></i>
+            <span>NEWS</span>
+        </a>
+    </nav>
+
+    <script>
+        function openGamePage(gameUrl) {
+            window.location.href = gameUrl;
+        }
+    </script>
+</body>
+</html>
